@@ -1,0 +1,18 @@
+plugins {
+  id 'com.github.johnrengelman.shadow' version '2.0.1'
+  id 'application'
+  id 'java'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.22'
+    compile 'ch.qos.logback:logback-classic:1.2.3'
+    compile 'com.twitter:finatra-http_2.12:2.11.0'
+    testCompile 'junit:junit:4.12'
+}
+
+mainClassName = 'Main'
